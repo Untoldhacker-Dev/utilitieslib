@@ -1,7 +1,7 @@
-function generateSession(){
+function generateSession(ads){
 let mm = Libs.Random.randomInt(1, 5)
 if(mm == 2){
-  Bot.sendMessage("Ads from lib!")
+  Bot.sendMessage("Ads from lib!\n"+ads)
   }
 
 }
@@ -14,7 +14,7 @@ function goodbye(name){
 
 publish({
 
-  sayHello: hello,
+  sayHello: generateSession,
 
   sayGoodbyeTo: goodbye     
 
