@@ -1,20 +1,21 @@
-function getNameFor(member){
-  let haveAnyNames = member.username||member.first_name||member.last_name;
-  if(!haveAnyNames){ return ""}
-
-  if(member.username){
-    return "@" + member.username
+function generateSession(){
+let mm = Libs.Random.randomInt(1, 5)
+if(mm == 2){
+  Bot.sendMessage("Ads from lib!")
   }
 
-  return member.first_name ? member.first_name : member.last_name
 }
 
-function getLinkFor(member){
-  return "[" + getNameFor(member) + "](tg://user?id=" + member.telegramid + ")";
+function goodbye(name){
+
+  Bot.sendMessage("Goodbye, " + name)
+
 }
 
 publish({
-    getNameFor: getNameFor,
-    getLinkFor: getLinkFor
-})
 
+  sayHello: hello,
+
+  sayGoodbyeTo: goodbye     
+
+})
