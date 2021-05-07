@@ -14,7 +14,7 @@ function goodbye(name){
 
 publish({
 
-  sayHello: generateSession,
+  generateSession: generateSession,
 
   sayGoodbyeTo: goodbye     
 
