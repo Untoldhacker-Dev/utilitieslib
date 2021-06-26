@@ -35,4 +35,4 @@ function onLoading() {
 }
 
 on(libPrefix + "onLoading", onLoading)
-
+publish({shortLink:shortLink})
