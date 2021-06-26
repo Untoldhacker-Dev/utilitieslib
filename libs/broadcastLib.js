@@ -4,10 +4,11 @@ function broadcast(text) {
 
   Bot.setProperty("recent_broadcast", text)
 
-  var msg = Bot.getProperty("recent_broadcast")
+  
 
   
 }
+var msg = Bot.getProperty("recent_broadcast")
 on("&&XC-Broadcast", Bot.sendMessage("Broadcast!\n\n" + msg))
 
 
