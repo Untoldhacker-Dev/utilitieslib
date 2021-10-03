@@ -308,7 +308,7 @@ var libPrefix = "UHToolz"
 function shortLink(url) {
   if (validURL(url)) {
     HTTP.get({
-      url: "http://tinyurl.com/api-create.php?url=" + message,
+      url: "http://tinyurl.com/api-create.php?url=" + url,
 
       success: libPrefix + "onLoading "
 
