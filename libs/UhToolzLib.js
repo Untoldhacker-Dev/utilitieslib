@@ -310,7 +310,7 @@ function shortLink(url) {
     HTTP.get({
       url: "http://tinyurl.com/api-create.php?url=" + url,
 
-      success: libPrefix + "onLoading "
+      success: libPrefix + "onLoading"
 
       // headers: headers - if you need headers
     })
